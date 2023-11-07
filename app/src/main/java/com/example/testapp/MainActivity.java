@@ -29,5 +29,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ((Button)findViewById(R.id.lab2_3)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Lab02_3.class);
+                startActivity(intent);
+            }
+        });
+        ((Button)findViewById(R.id.lab2_4)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Lab02_4.class);
+                startActivity(intent);
+            }
+        });
+        ((Button)findViewById(R.id.lab2_5)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Lab02_5.class);
+                startActivity(intent);
+            }
+        });
     }
 }

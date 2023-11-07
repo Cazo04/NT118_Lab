@@ -13,6 +13,18 @@
         android:theme="@style/Theme.TestApp"
         tools:targetApi="31">
         <activity
+            android:name=".Lab02_6"
+            android:exported="false" />
+        <activity
+            android:name=".Lab02_5"
+            android:exported="false" />
+        <activity
+            android:name=".Lab02_4"
+            android:exported="false" />
+        <activity
+            android:name=".Lab02_3"
+            android:exported="false" />
+        <activity
             android:name=".Lab02_2"
             android:exported="false" />
         <activity
