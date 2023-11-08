@@ -3,24 +3,37 @@
     android:layout_width="150dp"
     android:layout_height="150dp">
     <ImageView
+        android:id="@+id/img_thumbnail"
         android:src="@drawable/thumbnail_1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
-    <TextView
-        android:paddingStart="10dp"
-        android:gravity="center_vertical"
-        android:text="Dish"
-        android:textColor="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:background="#90000000"/>
-    <ImageView
-        android:src="@drawable/ic_star"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp"/>
+        android:gravity="center_vertical"
+        android:background="#90000000">
+        <TextView
+            android:id="@+id/txt_name"
+            android:paddingStart="10dp"
+            android:gravity="center_vertical"
+            android:text="Dish"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="8"
+            />
+        <ImageView
+            android:id="@+id/img_icon"
+            android:src="@drawable/ic_star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
 </RelativeLayout>

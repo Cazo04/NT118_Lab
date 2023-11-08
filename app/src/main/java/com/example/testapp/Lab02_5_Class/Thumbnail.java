@@ -1,4 +1,4 @@
-package com.example.testapp.Lap02_5_Class;
+package com.example.testapp.Lab02_5_Class;
 
 import com.example.testapp.R;
 
