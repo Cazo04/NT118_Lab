@@ -1,4 +1,4 @@
-package com.example.testapp;
+package com.example.testapp.Lab02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,7 @@ import com.example.testapp.Lab02_5_Class.Dish;
 import com.example.testapp.Lab02_5_Class.DishGridAdapter;
 import com.example.testapp.Lab02_5_Class.Thumbnail;
 import com.example.testapp.Lab02_5_Class.ThumbnailSpinnerAdapter;
+import com.example.testapp.R;
 
 import java.util.ArrayList;
 import java.util.List;

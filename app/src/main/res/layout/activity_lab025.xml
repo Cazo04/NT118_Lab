@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lab02_5">
+    tools:context=".Lab02.Lab02_5">
     <TextView
         android:id="@+id/txt_name"
         android:layout_width="120dp"

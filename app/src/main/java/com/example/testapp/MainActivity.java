@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.testapp.Lab02.Lab02_1;
+import com.example.testapp.Lab02.Lab02_2;
+import com.example.testapp.Lab02.Lab02_3;
+import com.example.testapp.Lab02.Lab02_4;
+import com.example.testapp.Lab02.Lab02_5;
+import com.example.testapp.Lab02.Lab02_6;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

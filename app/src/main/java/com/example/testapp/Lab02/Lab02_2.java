@@ -1,4 +1,4 @@
-package com.example.testapp;
+package com.example.testapp.Lab02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.testapp.R;
 
 import java.util.ArrayList;
 

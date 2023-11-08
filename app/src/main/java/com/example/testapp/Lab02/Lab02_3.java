@@ -1,4 +1,4 @@
-package com.example.testapp;
+package com.example.testapp.Lab02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,7 @@ import android.widget.RadioGroup;
 import com.example.testapp.Lab02_3_Class.Employee;
 import com.example.testapp.Lab02_3_Class.EmployeeFullTime;
 import com.example.testapp.Lab02_3_Class.EmployeePartTime;
+import com.example.testapp.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,12 @@
-package com.example.testapp;
+package com.example.testapp.Lab02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.testapp.R;
 
 public class Lab02_1 extends AppCompatActivity {
 

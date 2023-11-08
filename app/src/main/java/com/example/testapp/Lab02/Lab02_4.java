@@ -1,33 +1,33 @@
-package com.example.testapp;
+package com.example.testapp.Lab02;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ListView;
 
 import com.example.testapp.Lab02_4_Class.Employee2;
-import com.example.testapp.Lab02_6_Class.EmployeeRecyclerAdapter;
+import com.example.testapp.Lab02_4_Class.EmployeeAdapter;
+import com.example.testapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lab02_6 extends AppCompatActivity {
+public class Lab02_4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab026);
+        setContentView(R.layout.activity_lab024);
 
-        RecyclerView recycler_nv = (RecyclerView) findViewById(R.id.recycler_nv);
-        recycler_nv.setLayoutManager(new LinearLayoutManager(this));
+        ListView list_nv = (ListView) findViewById(R.id.list_nv);
         List<Employee2> employee2s = new ArrayList<>();
-        EmployeeRecyclerAdapter adapter = new EmployeeRecyclerAdapter(employee2s);
-        recycler_nv.setAdapter(adapter);
+        EmployeeAdapter adapter = new EmployeeAdapter(this, R.layout.item_employee, employee2s);
+        list_nv.setAdapter(adapter);
+
         ((Button)findViewById(R.id.btn_add)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,4 +45,5 @@ public class Lab02_6 extends AppCompatActivity {
             }
         });
     }
+
 }
