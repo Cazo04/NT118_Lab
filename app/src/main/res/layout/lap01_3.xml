@@ -14,15 +14,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/margin_basex4"
-        android:textSize="@dimen/text_large" />
+        android:layout_marginTop="@dimen/_margin_basex4"
+        android:textSize="@dimen/_text_large" />
 
     <TextView
         android:id="@+id/tv_user_name"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/username"
-        android:layout_marginTop="@dimen/margin_basex4"
+        android:layout_marginTop="@dimen/_margin_basex4"
         app:layout_constraintTop_toBottomOf="@+id/tv_sign_in"
         app:layout_constraintStart_toStartOf="parent" />
 

@@ -2,6 +2,7 @@ package com.example.testapp.Lab03;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -86,11 +87,23 @@ public class Lab03_1 extends AppCompatActivity {
         handleClickAnimationXml(btnZoomInXml, R.anim.anim_zoom_in);
         handleClickAnimationXml(btnZoomOutXml, R.anim.anim_zoom_out);
         handleClickAnimationXml(btnRotateXml, R.anim.anim_rotate);
+        handleClickAnimationXml(btnMoveXml, R.anim.anim_move);
         handleClickAnimationXml(btnSlideUpXml, R.anim.anim_slide_up);
         handleClickAnimationXml(btnBounceXml, R.anim.anim_bounce);
         handleClickAnimationXml(btnCombineXml, R.anim.anim_combine);
 
         handleClickAnimationCode(btnFadeInCode, initFadeInAnimation());
+        handleClickAnimationCode(btnFadeOutCode, initFadeOutAnimation());
+        handleClickAnimationCode(btnBlinkCode, initBlinkAnimation());
+
+        ivUitLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lab03_1.this, Lab03_2.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.anim_enter, R.anim.anim_exit);
+            }
+        });
     }
     private void handleClickAnimationCode(Button btn, Animation animation){
         btn.setOnClickListener(new View.OnClickListener() {
@@ -104,6 +117,21 @@ public class Lab03_1 extends AppCompatActivity {
         AlphaAnimation animation= new AlphaAnimation(0f,1f);
         animation.setDuration(3000);
         animation.setFillAfter(true);
+        animation.setAnimationListener(animationListener);
+        return animation;
+    }
+    private Animation initFadeOutAnimation(){
+        AlphaAnimation animation= new AlphaAnimation(1f,0f);
+        animation.setDuration(1000);
+        animation.setFillAfter(true);
+        animation.setAnimationListener(animationListener);
+        return animation;
+    }
+    private Animation initBlinkAnimation(){
+        AlphaAnimation animation= new AlphaAnimation(0f,1f);
+        animation.setDuration(300);
+        animation.setRepeatMode(Animation.REVERSE);
+        animation.setRepeatCount(3);
         animation.setAnimationListener(animationListener);
         return animation;
     }
