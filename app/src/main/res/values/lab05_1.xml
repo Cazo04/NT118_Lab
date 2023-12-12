@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_medium_large">18sp</dimen>
+    <string name="start">Start</string>
+    <string name="returned_by_bg_thread">Returned by background thread: \n\n</string>
+    <string name="done_background_thread_has_been_stopped">Done \nBackground thread has been stopped</string>
+    <string name="done">Done</string>
+    <string name="working">Working...</string>
+    <string name="global_value_seen">\n global value seen by all thread</string>
+</resources>
