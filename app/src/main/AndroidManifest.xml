@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +16,18 @@
         android:theme="@style/Theme.TestApp"
         tools:targetApi="31">
         <activity
+            android:name=".Lab05.Lab05_Final"
+            android:exported="false" />
+        <activity
+            android:name=".Lab04.Lab04_1"
+            android:exported="false" />
+        <activity
+            android:name=".Lab04.Lab04_Main"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Lab04.Lab04"
+            android:exported="false" />
+        <activity
             android:name=".Lab05.Lab05_3"
             android:exported="false" />
         <activity
@@ -23,7 +38,13 @@
             android:exported="false" />
         <activity
             android:name=".Lab05.Lab05_Main"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Lab03.Lab03_Fragment_1"
             android:exported="false" />
@@ -38,13 +59,7 @@
             android:exported="true" />
         <activity
             android:name=".Lab03.Lab03_Main"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Lab02.Lab02_6"
             android:exported="false" />

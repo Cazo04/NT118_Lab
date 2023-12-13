@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quick_job">Quick Job</string>
+    <string name="slow_job">Slow Job</string>
+    <string name="please_wait">Some SLOW job is being done. Please wait...</string>
+</resources>
